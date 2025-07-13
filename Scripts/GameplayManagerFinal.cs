@@ -1,36 +1,35 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using UnityEngine.SceneManagement;
 
-public class GameplayManager : MonoBehaviour
+public class GameplayManagerFaseFinal : MonoBehaviour
 {
     [Header("UI")]
     public TextMeshProUGUI perguntaText;
-    public Button[] opcoesButtons;           // 4 botões para as opções
+    public Button[] opcoesButtons;          // 4 botões para as opções
     public TextMeshProUGUI feedbackText;
 
     [Header("Professor")]
-    public Slider professorSlider;           // barra de vida
-    private int professorVida = 100;         // começa com 100
+    public Slider professorSlider;          // barra de vida
+    private int professorVida = 100;        // começa com 100
 
     [Header("Jogador")]
-    public Slider jogadorSlider;             // barra de vida
-    private int jogadorVida;                 // inicializado com o valor do GameSession
+    public Slider jogadorSlider;            // barra de vida
+    private int jogadorVida;                // inicializa com vida da sessão
 
     private int respostaCorreta;
     private bool jogoAcabou = false;
 
     void Start()
     {
-        // Inicializa vida do jogador a partir do GameSession
+        // Pega a vida atual do jogador da GameSession
         if (GameSession.Instance != null)
         {
             jogadorVida = GameSession.Instance.JogadorVida;
         }
         else
         {
-            jogadorVida = 100; // fallback, mas isso só ocorre se esquecer de adicionar GameSession
+            jogadorVida = 100; // fallback para teste
         }
 
         NovaPergunta();
@@ -44,21 +43,31 @@ public class GameplayManager : MonoBehaviour
 
         feedbackText.text = "";
 
-        int num1 = Random.Range(1, 10);
-        int num2 = Random.Range(1, 10);
-        int operacao = Random.Range(0, 4); // 0: +, 1: -, 2: ×, 3: /
         int resultado = 0;
-        string simbolo = "";
+        string pergunta = "";
 
-        switch (operacao)
+        int operacao = Random.Range(0, 2); // 0: equação linear, 1: fatorial
+
+        if (operacao == 0)
         {
-            case 0: resultado = num1 + num2; simbolo = "+"; break;
-            case 1: resultado = num1 - num2; simbolo = "-"; break;
-            case 2: resultado = num1 * num2; simbolo = "×"; break;
-            case 3: resultado = num1 / num2; simbolo = "/"; num1 *= num2; resultado = num1 / num2; break; // força resultado inteiro
+            // Equação linear do tipo ax + b = c
+            int x = Random.Range(1, 10);
+            int a = Random.Range(1, 5);
+            int b = Random.Range(0, 10);
+            int c = a * x + b;
+
+            resultado = x;
+            pergunta = $"Resolva para x: {a}x + {b} = {c}";
+        }
+        else
+        {
+            // Fatorial
+            int n = Random.Range(3, 7); // 3! até 6!
+            resultado = Fatorial(n);
+            pergunta = $"Qual é o valor de {n}!?";
         }
 
-        perguntaText.text = $"Quanto é {num1} {simbolo} {num2}?";
+        perguntaText.text = pergunta;
         respostaCorreta = resultado;
 
         int corretaIndex = Random.Range(0, 4);
@@ -73,8 +82,8 @@ public class GameplayManager : MonoBehaviour
             {
                 do
                 {
-                    opcao = Random.Range(resultado - 10, resultado + 11);
-                } while (opcao == resultado);
+                    opcao = resultado + Random.Range(-10, 11);
+                } while (opcao == resultado || opcao < 0);
             }
 
             opcoesButtons[i].GetComponentInChildren<TextMeshProUGUI>().text = opcao.ToString();
@@ -82,6 +91,13 @@ public class GameplayManager : MonoBehaviour
             int respostaClicada = opcao;
             opcoesButtons[i].onClick.AddListener(() => VerificarResposta(respostaClicada));
         }
+    }
+
+    int Fatorial(int n)
+    {
+        int f = 1;
+        for (int i = 2; i <= n; i++) f *= i;
+        return f;
     }
 
     void VerificarResposta(int respostaJogador)
@@ -96,10 +112,9 @@ public class GameplayManager : MonoBehaviour
 
             if (professorVida <= 0)
             {
-                feedbackText.text = "🎉 Você venceu a Fase 1!";
+                feedbackText.text = "🏆 Parabéns! Você venceu o jogo!";
                 jogoAcabou = true;
                 DesativarBotoes();
-                Invoke(nameof(CarregarProximaFase), 2f);
                 return;
             }
         }
@@ -125,11 +140,6 @@ public class GameplayManager : MonoBehaviour
         }
 
         Invoke(nameof(NovaPergunta), 1.5f);
-    }
-
-    void CarregarProximaFase()
-    {
-        SceneManager.LoadScene("GameplayScene_Fase2");
     }
 
     void AtualizarProfessor()

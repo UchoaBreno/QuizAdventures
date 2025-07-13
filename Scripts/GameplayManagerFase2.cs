@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class GameplayManager : MonoBehaviour
+public class GameplayManagerFase2 : MonoBehaviour
 {
     [Header("UI")]
     public TextMeshProUGUI perguntaText;
@@ -16,7 +16,7 @@ public class GameplayManager : MonoBehaviour
 
     [Header("Jogador")]
     public Slider jogadorSlider;             // barra de vida
-    private int jogadorVida;                 // inicializado com o valor do GameSession
+    private int jogadorVida;                 // inicializada com o valor do GameSession
 
     private int respostaCorreta;
     private bool jogoAcabou = false;
@@ -30,7 +30,7 @@ public class GameplayManager : MonoBehaviour
         }
         else
         {
-            jogadorVida = 100; // fallback, mas isso só ocorre se esquecer de adicionar GameSession
+            jogadorVida = 100; // fallback
         }
 
         NovaPergunta();
@@ -44,21 +44,30 @@ public class GameplayManager : MonoBehaviour
 
         feedbackText.text = "";
 
-        int num1 = Random.Range(1, 10);
-        int num2 = Random.Range(1, 10);
-        int operacao = Random.Range(0, 4); // 0: +, 1: -, 2: ×, 3: /
         int resultado = 0;
-        string simbolo = "";
+        string pergunta = "";
 
-        switch (operacao)
+        int operacao = Random.Range(0, 2); // 0: potenciação, 1: raiz
+
+        if (operacao == 0)
         {
-            case 0: resultado = num1 + num2; simbolo = "+"; break;
-            case 1: resultado = num1 - num2; simbolo = "-"; break;
-            case 2: resultado = num1 * num2; simbolo = "×"; break;
-            case 3: resultado = num1 / num2; simbolo = "/"; num1 *= num2; resultado = num1 / num2; break; // força resultado inteiro
+            // Potenciação
+            int baseNum = Random.Range(2, 6);  // base entre 2 e 5
+            int expoente = Random.Range(2, 4); // expoente 2 ou 3
+            resultado = (int)Mathf.Pow(baseNum, expoente);
+            pergunta = $"{baseNum}^{expoente}";
+        }
+        else
+        {
+            // Raiz quadrada
+            int[] quadrados = { 4, 9, 16, 25, 36, 49, 64, 81, 100 };
+            int index = Random.Range(0, quadrados.Length);
+            int numero = quadrados[index];
+            resultado = Mathf.RoundToInt(Mathf.Sqrt(numero));
+            pergunta = $"√{numero}";
         }
 
-        perguntaText.text = $"Quanto é {num1} {simbolo} {num2}?";
+        perguntaText.text = $"Quanto é {pergunta}?";
         respostaCorreta = resultado;
 
         int corretaIndex = Random.Range(0, 4);
@@ -73,7 +82,7 @@ public class GameplayManager : MonoBehaviour
             {
                 do
                 {
-                    opcao = Random.Range(resultado - 10, resultado + 11);
+                    opcao = Random.Range(Mathf.Max(1, resultado - 5), resultado + 6);
                 } while (opcao == resultado);
             }
 
@@ -96,10 +105,10 @@ public class GameplayManager : MonoBehaviour
 
             if (professorVida <= 0)
             {
-                feedbackText.text = "🎉 Você venceu a Fase 1!";
+                feedbackText.text = "🎉 Você venceu a Fase 2!";
                 jogoAcabou = true;
                 DesativarBotoes();
-                Invoke(nameof(CarregarProximaFase), 2f);
+                Invoke(nameof(CarregarFase3), 2f);
                 return;
             }
         }
@@ -127,9 +136,14 @@ public class GameplayManager : MonoBehaviour
         Invoke(nameof(NovaPergunta), 1.5f);
     }
 
-    void CarregarProximaFase()
+    void CarregarFase3()
     {
-        SceneManager.LoadScene("GameplayScene_Fase2");
+        if (GameSession.Instance != null)
+        {
+            GameSession.Instance.JogadorVida = jogadorVida;
+        }
+
+        SceneManager.LoadScene("GameplayScene_Fase3");
     }
 
     void AtualizarProfessor()

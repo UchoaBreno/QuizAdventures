@@ -1,0 +1,949 @@
+fileFormatVersion: 2
+guid: e1ecd3251923aff4cbb11080843b6f75
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3254438395701485646
+    second: Professor3_0
+  - first:
+      213: -6758420983290774029
+    second: Professor3_1
+  - first:
+      213: 9156420411035493272
+    second: Professor3_2
+  - first:
+      213: -600686211501790760
+    second: Professor3_3
+  - first:
+      213: 5749635531858163045
+    second: Professor3_4
+  - first:
+      213: -6551643404539332634
+    second: Professor3_5
+  - first:
+      213: -300707698667533868
+    second: Professor3_6
+  - first:
+      213: 3125347124855547850
+    second: Professor3_7
+  - first:
+      213: 8867758790288340818
+    second: Professor3_8
+  - first:
+      213: -6198541962447559935
+    second: Professor3_9
+  - first:
+      213: 3733802674058983119
+    second: Professor3_10
+  - first:
+      213: -6961690865525485597
+    second: Professor3_11
+  - first:
+      213: 4018160566014270026
+    second: Professor3_12
+  - first:
+      213: -888917097331195948
+    second: Professor3_13
+  - first:
+      213: 5157864624870683321
+    second: Professor3_14
+  - first:
+      213: 8719724415972916602
+    second: Professor3_15
+  - first:
+      213: -5707188131081749588
+    second: Professor3_16
+  - first:
+      213: 2600395381515949416
+    second: Professor3_17
+  - first:
+      213: 7774102236803023280
+    second: Professor3_18
+  - first:
+      213: 1675247042798795153
+    second: Professor3_19
+  - first:
+      213: 883651277729161010
+    second: Professor3_20
+  - first:
+      213: -6132431095667560717
+    second: Professor3_21
+  - first:
+      213: 2446869523276135638
+    second: Professor3_22
+  - first:
+      213: 5427280115323788497
+    second: Professor3_23
+  - first:
+      213: -8279807596908113533
+    second: Professor3_24
+  - first:
+      213: -3987438245343952809
+    second: Professor3_25
+  - first:
+      213: 5497043588102256230
+    second: Professor3_26
+  - first:
+      213: 1075981326772273968
+    second: Professor3_27
+  - first:
+      213: -7756899941242848430
+    second: Professor3_28
+  - first:
+      213: 4555372647551161560
+    second: Professor3_29
+  - first:
+      213: 2552827433542502005
+    second: Professor3_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Professor3_0
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 592
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bf12d89589e5d2d0800000000000000
+      internalID: -3254438395701485646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professor3_1
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 583
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fd38606ce34532a0800000000000000
+      internalID: -6758420983290774029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professor3_2
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 580
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89328edd9d3221f70800000000000000
+      internalID: 9156420411035493272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professor3_3
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 570
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d9e5fdb21fe9a7f0800000000000000
+      internalID: -600686211501790760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professor3_4
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 571
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 565be58ad0fcacf40800000000000000
+      internalID: 5749635531858163045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professor3_5
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 552
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e7f6612903e315a0800000000000000
+      internalID: -6551643404539332634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professor3_6
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 537
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d942b7f0fba3dbf0800000000000000
+      internalID: -300707698667533868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professor3_7
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 543
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac7adc8b6a67f5b20800000000000000
+      internalID: 3125347124855547850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professor3_8
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 539
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 257fbf8e2ab901b70800000000000000
+      internalID: 8867758790288340818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professor3_9
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 534
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 103e5fa2dea5af9a0800000000000000
+      internalID: -6198541962447559935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professor3_10
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 519
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc670b0efb121d330800000000000000
+      internalID: 3733802674058983119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professor3_11
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 499
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ef854cda0b136f90800000000000000
+      internalID: -6961690865525485597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professor3_12
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 506
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4a53c3eebf53c730800000000000000
+      internalID: 4018160566014270026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professor3_13
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 498
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4df7dc21c9ee9a3f0800000000000000
+      internalID: -888917097331195948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professor3_14
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 106
+        width: 375
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b278fc7c8a649740800000000000000
+      internalID: 5157864624870683321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professor3_15
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 425
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7dbd51482fa20970800000000000000
+      internalID: 8719724415972916602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professor3_16
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 320
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cabfb8cf1aefbc0b0800000000000000
+      internalID: -5707188131081749588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professor3_17
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 266
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86513de62d5761420800000000000000
+      internalID: 2600395381515949416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professor3_18
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 90
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b1c630abc823eb60800000000000000
+      internalID: 7774102236803023280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professor3_19
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 95
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 199bb014f4caf3710800000000000000
+      internalID: 1675247042798795153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professor3_20
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 81
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23fdd52c72c534c00800000000000000
+      internalID: 883651277729161010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professor3_21
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 81
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3feec25d86a35eaa0800000000000000
+      internalID: -6132431095667560717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professor3_22
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 62
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dc7a9a0ed605f120800000000000000
+      internalID: 2446869523276135638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professor3_23
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 67
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dc5a6a8282915b40800000000000000
+      internalID: 5427280115323788497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professor3_24
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 65
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38116b1ebd6381d80800000000000000
+      internalID: -8279807596908113533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professor3_25
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 53
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 750877eca06c9a8c0800000000000000
+      internalID: -3987438245343952809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professor3_26
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 32
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6667cafc40c694c40800000000000000
+      internalID: 5497043588102256230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professor3_27
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 41
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 033073fd057aeee00800000000000000
+      internalID: 1075981326772273968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professor3_28
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 28
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25bb8fbe994f95490800000000000000
+      internalID: -7756899941242848430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professor3_29
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 30
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d451dc994fe73f30800000000000000
+      internalID: 4555372647551161560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Professor3_30
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 17
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5764c2d76077d6320800000000000000
+      internalID: 2552827433542502005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Professor3_0: -3254438395701485646
+      Professor3_1: -6758420983290774029
+      Professor3_10: 3733802674058983119
+      Professor3_11: -6961690865525485597
+      Professor3_12: 4018160566014270026
+      Professor3_13: -888917097331195948
+      Professor3_14: 5157864624870683321
+      Professor3_15: 8719724415972916602
+      Professor3_16: -5707188131081749588
+      Professor3_17: 2600395381515949416
+      Professor3_18: 7774102236803023280
+      Professor3_19: 1675247042798795153
+      Professor3_2: 9156420411035493272
+      Professor3_20: 883651277729161010
+      Professor3_21: -6132431095667560717
+      Professor3_22: 2446869523276135638
+      Professor3_23: 5427280115323788497
+      Professor3_24: -8279807596908113533
+      Professor3_25: -3987438245343952809
+      Professor3_26: 5497043588102256230
+      Professor3_27: 1075981326772273968
+      Professor3_28: -7756899941242848430
+      Professor3_29: 4555372647551161560
+      Professor3_3: -600686211501790760
+      Professor3_30: 2552827433542502005
+      Professor3_4: 5749635531858163045
+      Professor3_5: -6551643404539332634
+      Professor3_6: -300707698667533868
+      Professor3_7: 3125347124855547850
+      Professor3_8: 8867758790288340818
+      Professor3_9: -6198541962447559935
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
